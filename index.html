@@ -16,7 +16,7 @@
 <meta property="og:image" content="https://REEMPLAZAR-DOMINIO/assets/og.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Vertag Solutions","url":"https://REEMPLAZAR-DOMINIO/","logo":"https://REEMPLAZAR-DOMINIO/assets/logo.png","image":"https://REEMPLAZAR-DOMINIO/assets/og.png","description":"Relevamiento de procesos, automatización, soluciones con IA y software a medida para PyMEs.","email":"vertagsolutions@gmail.com","telephone":"+5493764380293","areaServed":"AR","address":{"@type":"PostalAddress","addressRegion":"Misiones","addressCountry":"AR"},"sameAs":["https://www.instagram.com/vertagsolutions"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Vertag Solutions","url":"https://REEMPLAZAR-DOMINIO/","logo":"https://REEMPLAZAR-DOMINIO/assets/logo.png","image":"https://REEMPLAZAR-DOMINIO/assets/og.png","description":"Relevamiento de procesos, automatización, soluciones con IA y software a medida para PyMEs.","email":"vertagsolutions@gmail.com","telephone":["+5493764380293","+5493764887280"],"areaServed":"AR","address":{"@type":"PostalAddress","addressRegion":"Misiones","addressCountry":"AR"},"sameAs":["https://www.instagram.com/vertagsolutions"]}</script>
 <link rel="icon" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/logo.png">
 <link rel="preload" href="assets/sora.woff2" as="font" type="font/woff2" crossorigin>
@@ -111,6 +111,7 @@ section{padding:clamp(64px,9vw,120px) 0}
 .contact{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
 form{background:#0A1F37;border:1px solid var(--line);border-radius:var(--r);padding:34px;display:grid;gap:18px}
 label{display:grid;gap:7px;font-weight:600;font-size:15.5px}
+select{font:500 17px Manrope;color:var(--ink);background:#06121F;border:1.5px solid #1b3f66;border-radius:10px;padding:14px 16px;width:100%;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9' fill='none' stroke='%236FBBF5' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M1 1l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:44px}
 input,textarea{font:500 17px Manrope;color:var(--ink);background:#06121F;border:1.5px solid #1b3f66;border-radius:10px;padding:14px 16px;width:100%}
 input::placeholder,textarea::placeholder{color:#5f7a96}
 textarea{min-height:110px;resize:vertical}
@@ -136,6 +137,11 @@ textarea{min-height:110px;resize:vertical}
 .fab svg{width:28px;height:28px}
 footer{padding:36px 0;border-top:1px solid var(--line);color:var(--mut);font-size:15px}
 footer .w{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.wa-pop{position:fixed;z-index:50;min-width:230px;background:#0A1F37;border:1px solid #1d4f80;border-radius:14px;padding:8px;box-shadow:0 20px 50px -10px rgba(0,0,0,.7);display:grid;gap:4px;opacity:0;transform:translateY(8px) scale(.97);transition:opacity .2s,transform .3s cubic-bezier(.2,.9,.3,1.2)}
+.wa-pop.open{opacity:1;transform:none}
+.wa-pop a{display:flex;align-items:center;gap:12px;padding:13px 14px;border-radius:10px;text-decoration:none;font:700 16px Manrope;color:var(--ink);transition:background .2s}
+.wa-pop a:hover,.wa-pop a:focus-visible{background:rgba(59,154,232,.18)}
+.wa-pop a span{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#04101d;font:800 15px Sora}
 .hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
 .fine{font-size:14px;color:var(--mut);line-height:1.5}.fine a{color:var(--blue-hi)}
 .mini{gap:16px}
@@ -276,6 +282,7 @@ footer .w{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <label>Tu nombre<input name="n" required autocomplete="name" placeholder="Nombre y apellido"></label>
   <label>Empresa<input name="e" required autocomplete="organization" placeholder="Nombre de tu empresa"></label>
   <label>¿Qué te gustaría mejorar?<textarea name="m" required placeholder="Ej.: llevamos los pedidos en planillas y no sabemos qué stock rota"></textarea></label>
+  <label id="wsel" hidden>¿Con quién preferís hablar?<select name="wa" id="wasel"></select></label>
   <input class="hp" name="web" tabindex="-1" autocomplete="off" aria-hidden="true">
   <button class="btn btn-p" type="submit">Pedir relevamiento</button>
   <p class="fine">Usamos tus datos solo para responderte. Más info en la <a href="politica-privacidad.html">política de privacidad</a>.</p>
@@ -284,13 +291,17 @@ footer .w{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </div></section>
 </main>
 
+<div class="wa-pop" id="wapop" role="menu" aria-label="Elegí con quién hablar" hidden></div>
 <a class="fab" id="fab" href="#contacto" aria-label="Contactar a Vertag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 12a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.2-4.2A8.5 8.5 0 1 1 20.5 12z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2.1-1-.9.8a5 5 0 0 1-2.2-2.2l.8-.9-1-2.1z" fill="currentColor" stroke="none"/></svg></a>
 <footer><div class="w"><span>Vertag Solutions. Eficiencia, Tecnología y Capital. · <a href="politica-privacidad.html">Privacidad</a></span><span>Misiones, Argentina</span></div></footer>
 
 <script>
 /* ===== COMPLETAR ANTES DE PUBLICAR ===== */
 var CONFIG={
-  whatsapp:"5493764380293",            // solo números con código de país, ej. 5493764123456
+  whatsapps:[                          // números con código de país, sin + ni espacios
+    {nombre:"Fabrizio",numero:"5493764380293"},
+    {nombre:"Ian",numero:"5493764887280"}
+  ],
   email:"vertagsolutions@gmail.com",               // ej. hola@tudominio.com
   instagram:"https://www.instagram.com/vertagsolutions",
   agenda:"https://cal.com/vertag/llamada-de-20-minutos-con-vertag",              // link de Cal.com / Calendly. Vacío = el botón no se muestra
@@ -330,7 +341,28 @@ document.documentElement.classList.add('js');
 })();
 (function(){
  var C=CONFIG,$=function(i){return document.getElementById(i)};
- if(C.whatsapp){$('c-wa').hidden=false;$('c-wa').href='https://wa.me/'+C.whatsapp;$('fab').href='https://wa.me/'+C.whatsapp;$('fab').target='_blank';$('fab').rel='noopener';$('fab').setAttribute('aria-label','Escribinos por WhatsApp')}
+ var W=(C.whatsapps||[]).filter(function(w){return w&&w.numero}),HOLA='Hola, quiero consultar por Vertag.';
+ function waUrl(n,t){return 'https://wa.me/'+n+'?text='+encodeURIComponent(t||HOLA)}
+ if(W.length){
+  var pop=$('wapop'),cur=null;
+  $('c-wa').hidden=false;$('fab').setAttribute('aria-label','Escribinos por WhatsApp');
+  [$('c-wa'),$('fab')].forEach(function(a){a.target='_blank';a.rel='noopener'});
+  if(W.length===1){$('c-wa').href=waUrl(W[0].numero);$('fab').href=waUrl(W[0].numero)}
+  else{
+   pop.innerHTML=W.map(function(w){return '<a role="menuitem" target="_blank" rel="noopener" href="'+waUrl(w.numero)+'"><span>'+w.nombre.charAt(0)+'</span>WhatsApp con '+w.nombre+'</a>'}).join('');
+   var closeP=function(){pop.classList.remove('open');setTimeout(function(){if(!pop.classList.contains('open'))pop.hidden=true},200);if(cur)cur.setAttribute('aria-expanded','false');cur=null};
+   [$('c-wa'),$('fab')].forEach(function(a){a.setAttribute('aria-haspopup','menu');a.setAttribute('aria-expanded','false');a.removeAttribute('target');a.href='#';
+    a.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();if(cur===a){closeP();return}
+     cur=a;a.setAttribute('aria-expanded','true');pop.hidden=false;pop.style.top=pop.style.bottom=pop.style.left=pop.style.right='auto';
+     var r=a.getBoundingClientRect(),w=pop.offsetWidth;pop.style.left=Math.max(12,Math.min(r.left,innerWidth-w-12))+'px';
+     if(r.top>innerHeight/2){pop.style.bottom=(innerHeight-r.top+10)+'px'}else{pop.style.top=(r.bottom+10)+'px'}
+     requestAnimationFrame(function(){pop.classList.add('open')});pop.querySelector('a').focus({preventScroll:true})})});
+   document.addEventListener('click',function(e){if(cur&&!pop.contains(e.target))closeP()});
+   addEventListener('keydown',function(e){if(e.key==='Escape'&&cur){var c=cur;closeP();c.focus()}});
+   addEventListener('scroll',function(){if(cur)closeP()},{passive:true});
+   $('wsel').hidden=false;$('wasel').innerHTML=W.map(function(w,i){return '<option value="'+i+'">'+w.nombre+'</option>'}).join('');
+  }
+ }
  if(C.agenda){$('c-ag').hidden=false;$('c-ag').href=C.agenda}
  if(C.email){$('c-mail').hidden=false;$('c-mail').href='mailto:'+C.email}
  if(C.instagram){$('c-ig').hidden=false;$('c-ig').href=C.instagram}
@@ -353,7 +385,7 @@ document.documentElement.classList.add('js');
   ev.preventDefault();var d=new FormData(ev.target),t='Hola, soy '+d.get('n')+' de '+d.get('e')+'. Quiero mejorar: '+d.get('m');
   if(!d.get('web'))saveLead({tipo:'contacto',nombre:d.get('n'),empresa:d.get('e'),mensaje:d.get('m')});
   var bt=ev.target.querySelector('button');bt.textContent='Abriendo…';setTimeout(function(){bt.textContent='Pedir relevamiento'},2500);
-  if(C.whatsapp){window.open('https://wa.me/'+C.whatsapp+'?text='+encodeURIComponent(t),'_blank','noopener');$('fmsg').textContent='Se abrió WhatsApp con tu mensaje. Enviálo para que lo recibamos.'}
+  if(W.length){var wn=W[W.length>1?(+d.get('wa')||0):0].numero;window.open(waUrl(wn,t),'_blank','noopener');$('fmsg').textContent='Se abrió WhatsApp con tu mensaje. Enviálo para que lo recibamos.'}
   else if(C.email){location.href='mailto:'+C.email+'?subject='+encodeURIComponent('Relevamiento: '+d.get('e'))+'&body='+encodeURIComponent(t)}
   else{$('fmsg').textContent='Falta configurar el contacto en CONFIG (index.html).'}
  });
