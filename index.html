@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vertag Solutions | Hacemos que tu empresa funcione mejor</title>
+<meta name="description" content="Relevamos los procesos de tu empresa, detectamos dónde se pierden tiempo, dinero y capacidad, y lo resolvemos con automatización, IA y software a medida.">
+<link rel="canonical" href="https://REEMPLAZAR-DOMINIO/">
+<meta name="theme-color" content="#050E1A">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="Vertag Solutions">
+<meta property="og:url" content="https://REEMPLAZAR-DOMINIO/">
+<meta property="og:title" content="Vertag Solutions | Hacemos que tu empresa funcione mejor">
+<meta property="og:description" content="Relevamos tus procesos y los resolvemos con automatización, IA y software a medida para PyMEs.">
+<meta property="og:image" content="https://REEMPLAZAR-DOMINIO/assets/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Vertag Solutions","url":"https://REEMPLAZAR-DOMINIO/","logo":"https://REEMPLAZAR-DOMINIO/assets/logo.png","image":"https://REEMPLAZAR-DOMINIO/assets/og.png","description":"Relevamiento de procesos, automatización, soluciones con IA y software a medida para PyMEs.","email":"vertagsolutions@gmail.com","telephone":"+5493764380293","areaServed":"AR","address":{"@type":"PostalAddress","addressRegion":"Misiones","addressCountry":"AR"},"sameAs":["https://www.instagram.com/vertagsolutions"]}</script>
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/logo.png">
+<link rel="preload" href="assets/sora.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Sora;font-weight:100 800;font-display:swap;src:url(assets/sora.woff2) format('woff2')}
+@font-face{font-family:Manrope;font-weight:200 800;font-display:swap;src:url(assets/manrope.woff2) format('woff2')}
+:root{--bg:#050E1A;--bg2:#08182B;--line:#14304f;--blue:#3B9AE8;--blue-hi:#6FBBF5;--ink:#EEF4FA;--mut:#9DB0C5;--r:14px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{background:var(--bg);color:var(--ink);font:400 18px/1.65 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue-hi);outline-offset:3px;border-radius:6px}
+.w{width:min(1160px,100% - 48px);margin-inline:auto}
+h1,h2,h3{font-family:Sora,sans-serif;letter-spacing:-.025em;line-height:1.08;font-weight:700}
+h2{font-size:clamp(32px,4.4vw,54px);max-width:18ch}
+.lead{color:var(--mut);max-width:56ch}
+.btn{display:inline-block;font:700 17px Manrope;padding:16px 28px;border-radius:10px;text-decoration:none;border:0;cursor:pointer;transition:background .25s,box-shadow .3s,transform .35s cubic-bezier(.2,.9,.3,1.4);-webkit-tap-highlight-color:transparent;will-change:transform}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.96);transition-duration:.08s}
+.btn-p{background:var(--blue);color:#04101d}.btn-p:hover{background:var(--blue-hi);box-shadow:0 10px 30px -8px rgba(59,154,232,.65)}
+.btn-g{color:var(--ink);box-shadow:inset 0 0 0 2px var(--line)}.btn-g:hover{box-shadow:inset 0 0 0 2px var(--blue)}
+/* nav */
+header{position:sticky;top:0;z-index:20;background:rgba(5,14,26,.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(20,48,79,.7)}
+nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font:800 21px Sora;letter-spacing:.04em}
+.brand img{width:38px;height:38px;border-radius:50%}
+.links{display:flex;align-items:center;gap:30px;font-weight:600;font-size:16px}
+.links a{text-decoration:none;color:var(--mut)}.links a:hover{color:#fff}
+.links .btn{padding:11px 20px;font-size:15px;color:#04101d}.links .btn:hover{color:#04101d}
+#bar{position:fixed;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--blue-hi));transform-origin:left;transform:scaleX(var(--sp,0));z-index:40;pointer-events:none}
+.links a:not(.btn){position:relative;transition:color .25s}
+.links a:not(.btn):after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.links a.act{color:#fff}.links a.act:after{transform:scaleX(1)}
+.burger{display:none;width:46px;height:46px;border-radius:10px;border:0;background:transparent;cursor:pointer;position:relative;color:var(--ink)}
+.burger i{position:absolute;left:12px;right:12px;height:2px;background:currentColor;border-radius:2px;transition:transform .35s cubic-bezier(.2,.8,.2,1),opacity .2s}
+.burger i:nth-child(1){top:16px}.burger i:nth-child(2){top:22px}.burger i:nth-child(3){top:28px}
+.burger[aria-expanded=true] i:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded=true] i:nth-child(2){opacity:0}
+.burger[aria-expanded=true] i:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+/* hero */
+.hero{position:relative}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(520px circle at var(--mx,70%) var(--my,35%),rgba(59,154,232,.13),transparent 70%);opacity:var(--glow,0);transition:opacity .6s}
+.hero .w{position:relative}
+.js .in-h{opacity:0;animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--i)*110ms + 80ms)}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.map .wire{transition:stroke .3s,stroke-width .3s}.map .wire.hot{stroke:var(--blue-hi);stroke-width:3}
+.map .node g{cursor:default}.map .node g rect{transition:fill .3s,stroke .3s}.map .node g:hover rect{fill:#12426f;stroke:var(--blue-hi)}
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms)}
+.js .rv.in{opacity:1;transform:none}
+.hero{padding:clamp(48px,8vw,96px) 0 clamp(24px,3vw,40px);background:radial-gradient(ellipse 70% 60% at 78% 40%,rgba(18,64,110,.55),transparent 70%)}
+.hero .w{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(42px,5.8vw,82px);letter-spacing:-.04em;line-height:.98;font-weight:800}
+.hero h1 em{font-style:normal;color:var(--blue-hi)}
+.hero p{margin:30px 0 38px;font-size:20px;max-width:46ch;color:var(--mut)}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.pill{margin-top:44px;color:var(--mut);font-weight:600;font-size:16px;display:flex;gap:10px 22px;flex-wrap:wrap}
+.pill span{padding-left:16px;position:relative}.pill span:before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--blue)}
+.map{width:100%;height:auto;overflow:visible}
+.map .node rect{fill:#0B2340;stroke:#1d4f80;stroke-width:1.5}
+.map .node text{fill:#E6F0FA;font:700 17px Sora;text-anchor:middle;dominant-baseline:central}
+.map .core rect{fill:#0F3A66;stroke:var(--blue);stroke-width:2}
+.map .core text{font:800 22px Sora;letter-spacing:.08em;fill:#fff}
+.map .wire{stroke:#1d4f80;stroke-width:2;fill:none}
+.map .pulse{stroke:var(--blue-hi);stroke-width:3;fill:none;stroke-linecap:round;stroke-dasharray:22 600;stroke-dashoffset:644;animation:flow 4.8s cubic-bezier(.5,0,.3,1) infinite}
+.map .p2{animation-delay:.8s}.map .p3{animation-delay:1.6s}.map .p4{animation-delay:2.4s}.map .p5{animation-delay:3.2s}.map .p6{animation-delay:4s}
+@keyframes flow{0%{stroke-dashoffset:644}55%,100%{stroke-dashoffset:370}}
+/* sections */
+section{padding:clamp(64px,9vw,120px) 0}
+.alt{background:var(--bg2);border-block:1px solid var(--line)}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:24px 60px;align-items:end;margin-bottom:56px}
+.rows{list-style:none}
+.rows li{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:12px 60px;padding:30px 0;border-top:1px solid var(--line)}
+.rows li:last-child{border-bottom:1px solid var(--line)}
+.rows h3{font-size:clamp(22px,2.6vw,30px)}
+.rows p{color:var(--mut);max-width:52ch}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;position:relative}
+.steps li{padding:0 28px 0 0;counter-increment:s}
+.steps li:before{content:counter(s);display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--blue);color:#04101d;font:800 22px Sora;margin-bottom:26px;position:relative;z-index:1}
+.steps:before{content:"";position:absolute;left:26px;right:40px;top:26px;height:2px;background:var(--line)}
+.steps:after{content:"";position:absolute;left:26px;width:calc(100% - 66px);top:26px;height:2px;background:var(--blue);transform-origin:left;transform:scaleX(var(--p,0))}
+.js .steps li:not(.on):before{background:#0F2D4E;color:var(--mut);box-shadow:inset 0 0 0 2px #1d4f80}
+.steps li:before{transition:background .5s,color .5s,box-shadow .5s}
+.steps h3{font-size:22px;margin-bottom:10px}.steps p{color:var(--mut);font-size:16.5px}
+.note{margin-top:52px;padding:22px 28px;border-left:4px solid var(--blue);background:rgba(15,45,78,.4);max-width:760px;font-weight:600}
+.build{display:grid;grid-template-columns:repeat(2,1fr);gap:0 60px}
+.build li{list-style:none;padding:26px 0;border-top:1px solid var(--line)}
+.build h3{font-size:22px;margin-bottom:8px}.build p{color:var(--mut);font-size:16.5px}
+.cap{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.cap .big{font:800 clamp(34px,5vw,62px)/1.05 Sora;letter-spacing:-.035em}
+.cap .big span{color:var(--blue-hi)}
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+form{background:#0A1F37;border:1px solid var(--line);border-radius:var(--r);padding:34px;display:grid;gap:18px}
+label{display:grid;gap:7px;font-weight:600;font-size:15.5px}
+input,textarea{font:500 17px Manrope;color:var(--ink);background:#06121F;border:1.5px solid #1b3f66;border-radius:10px;padding:14px 16px;width:100%}
+input::placeholder,textarea::placeholder{color:#5f7a96}
+textarea{min-height:110px;resize:vertical}
+.ico-row{margin-top:34px;display:flex;gap:14px}
+.ico{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;color:var(--blue-hi);box-shadow:inset 0 0 0 2px #1d4f80;transition:background .25s,color .25s,box-shadow .25s,transform .35s cubic-bezier(.2,.9,.3,1.4)}
+.ico svg{width:26px;height:26px}
+.ico:hover{background:var(--blue);color:#04101d;box-shadow:inset 0 0 0 2px var(--blue);transform:translateY(-3px)}
+.ico:active{transform:scale(.92);transition-duration:.08s}
+.faq{max-width:820px}
+.faq .q{border-top:1px solid var(--line)}.faq .q:last-child{border-bottom:1px solid var(--line)}
+.faq button{all:unset;box-sizing:border-box;width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:26px 0;cursor:pointer;font:700 clamp(18px,2.2vw,22px) Sora;letter-spacing:-.015em;transition:color .25s}
+.faq button:hover{color:var(--blue-hi)}.faq button:focus-visible{outline:3px solid var(--blue-hi);outline-offset:2px;border-radius:6px}
+.faq button b{flex:none;width:32px;height:32px;border-radius:50%;box-shadow:inset 0 0 0 2px #1d4f80;position:relative;transition:transform .4s cubic-bezier(.2,.8,.2,1),background .3s}
+.faq button b:before,.faq button b:after{content:"";position:absolute;left:9px;right:9px;top:15px;height:2px;background:var(--blue-hi);transition:transform .4s}
+.faq button b:after{transform:rotate(90deg)}
+.faq button[aria-expanded=true] b{transform:rotate(180deg);background:rgba(59,154,232,.15)}
+.faq button[aria-expanded=true] b:after{transform:rotate(0)}
+.faq .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.2,.8,.2,1)}
+.faq .a>div{overflow:hidden}.faq .a p{color:var(--mut);padding:0 52px 26px 0;max-width:62ch}
+.faq .q.open .a{grid-template-rows:1fr}
+.fab{position:fixed;right:20px;bottom:20px;z-index:30;width:58px;height:58px;border-radius:50%;background:var(--blue);color:#04101d;display:grid;place-items:center;box-shadow:0 12px 30px -6px rgba(59,154,232,.7);transform:translateY(90px) scale(.6);opacity:0;pointer-events:none;transition:transform .5s cubic-bezier(.2,.9,.3,1.3),opacity .3s,background .25s}
+.fab.show{transform:none;opacity:1;pointer-events:auto}.fab:hover{background:var(--blue-hi)}.fab:active{transform:scale(.92)}
+.fab svg{width:28px;height:28px}
+footer{padding:36px 0;border-top:1px solid var(--line);color:var(--mut);font-size:15px}
+footer .w{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
+.fine{font-size:14px;color:var(--mut);line-height:1.5}.fine a{color:var(--blue-hi)}
+.mini{gap:16px}
+.ctas{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
+[hidden]{display:none!important}
+@media(max-width:900px){
+ .burger{display:block}
+ .links{position:fixed;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#050E1A;padding:8px 24px 26px;border-bottom:1px solid var(--line);transform:translateY(-12px);opacity:0;pointer-events:none;transition:transform .4s cubic-bezier(.2,.8,.2,1),opacity .3s}
+ .links.open{transform:none;opacity:1;pointer-events:auto}
+ .links a:not(.btn){display:block;padding:16px 0;font-size:18px;border-bottom:1px solid var(--line)}.links a:not(.btn):after{display:none}
+ .links .btn{margin-top:20px;text-align:center;padding:15px}
+ .hero .w,.head,.cap,.contact{grid-template-columns:1fr}
+ .map{max-width:520px;margin:10px auto 0}
+ .rows li{grid-template-columns:1fr}
+ .steps{grid-template-columns:1fr 1fr;gap:40px 20px}.steps:before{display:none}
+ .build{grid-template-columns:1fr}
+}
+@media(max-width:520px){.steps{grid-template-columns:1fr}.hero p{font-size:18px}}
+@media(prefers-reduced-motion:reduce){.js .in-h,.js .rv{animation:none;opacity:1;transform:none;transition:none}.btn,.fab,.faq .a,#bar{transition:none}.steps:after{transform:scaleX(1)}.map .pulse{animation:none;stroke-dashoffset:0;stroke-dasharray:none;opacity:.5}html{scroll-behavior:auto}}
+</style>
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)}</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<div id="bar" aria-hidden="true"></div>
+<header><nav class="w">
+ <a class="brand" href="#top" aria-label="Vertag, inicio"><img src="assets/logo.png" alt="">VERTAG</a>
+ <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
+ <div class="links" id="menu"><a href="#que-hacemos">Qué hacemos</a><a href="#como-trabajamos">Cómo trabajamos</a><a href="#resultados">Qué construimos</a><a href="#preguntas">Preguntas</a><a href="#contacto">Contacto</a><a class="btn btn-p" href="#contacto">Analizar mi empresa</a></div>
+</nav></header>
+
+<main id="top">
+<div class="hero"><div class="w">
+ <div>
+  <h1 class="in-h" style="--i:0">Hacemos que tu empresa funcione <em>mejor.</em></h1>
+  <p class="in-h" style="--i:1">Detectamos dónde tu empresa pierde tiempo, dinero y capacidad. Optimizamos procesos e implementamos tecnología para generar resultados medibles.</p>
+  <div class="cta in-h" style="--i:2"><a class="btn btn-p" href="#contacto">Analizar mi empresa</a><a class="btn btn-g" href="#como-trabajamos">Conocer cómo trabajamos</a></div>
+  <div class="pill in-h" style="--i:3"><span>Eficiencia</span><span>Tecnología</span><span>Capital</span></div>
+ </div>
+ <svg class="map in-h" style="--i:2" viewBox="0 0 600 520" role="img" aria-label="Vertag en el centro, conectando ventas, clientes, stock, compras, cobranzas y gestión de tu empresa">
+  <g><path class="wire" data-n="0" d="M150 80H190L240 238"/><path class="wire" data-n="1" d="M150 260H240"/><path class="wire" data-n="2" d="M150 440H190L240 282"/><path class="wire" data-n="3" d="M450 80H410L360 238"/><path class="wire" data-n="4" d="M450 260H360"/><path class="wire" data-n="5" d="M450 440H410L360 282"/></g>
+  <g>
+   <path class="pulse" d="M150 80H190L240 238"/><path class="pulse p2" d="M150 260H240"/><path class="pulse p3" d="M150 440H190L240 282"/>
+   <path class="pulse p4" d="M450 80H410L360 238"/><path class="pulse p5" d="M450 260H360"/><path class="pulse p6" d="M450 440H410L360 282"/>
+  </g>
+  <g class="node">
+   <g data-n="0"><rect x="10" y="58" width="140" height="44" rx="10"/><text x="80" y="80">Ventas</text></g>
+   <g data-n="1"><rect x="10" y="238" width="140" height="44" rx="10"/><text x="80" y="260">Clientes</text></g>
+   <g data-n="2"><rect x="10" y="418" width="140" height="44" rx="10"/><text x="80" y="440">Stock</text></g>
+   <g data-n="3"><rect x="450" y="58" width="140" height="44" rx="10"/><text x="520" y="80">Compras</text></g>
+   <g data-n="4"><rect x="450" y="238" width="140" height="44" rx="10"/><text x="520" y="260">Cobranzas</text></g>
+   <g data-n="5"><rect x="450" y="418" width="140" height="44" rx="10"/><text x="520" y="440">Gestión</text></g>
+  </g>
+  <g class="node core"><rect x="240" y="222" width="120" height="76" rx="14"/><text x="300" y="260">VERTAG</text></g>
+ </svg>
+</div></div>
+
+<section id="problema"><div class="w">
+ <div class="head"><h2>La empresa crece. Los procesos, no.</h2><p class="lead">Cuando cada área arma sus propias planillas, nadie ve el negocio completo. Ahí se escapan las ventas, las horas y el margen.</p></div>
+ <ul class="rows">
+  <li><h3>Cada área, su planilla</h3><p>Ventas, stock y cobranzas viven en archivos distintos que se actualizan a mano y casi nunca coinciden.</p></li>
+  <li><h3>Información que no está en un solo lugar</h3><p>Los datos de clientes y pedidos quedan en celulares, chats y cabezas. Si alguien falta, el proceso se frena.</p></li>
+  <li><h3>Decisiones a ojo</h3><p>Sin números a mano, comprar, producir o priorizar clientes se resuelve por intuición. Lo que no está mapeado no se puede mejorar.</p></li>
+ </ul>
+</div></section>
+
+<section id="que-hacemos" class="alt"><div class="w">
+ <div class="head"><h2>Qué hacemos</h2><p class="lead">Tres formas de resolver lo que el relevamiento encuentra. Elegimos la que mejor se paga sola.</p></div>
+ <ul class="rows">
+  <li><h3>Automatización de procesos</h3><p>Pedidos, reportes, alertas y cargas que hoy se hacen a mano pasan a correr solos, conectados a las herramientas que ya usás.</p></li>
+  <li><h3>Soluciones con IA</h3><p>Asistentes y herramientas que atienden consultas, ordenan información y ahorran horas de trabajo repetitivo del equipo.</p></li>
+  <li><h3>Software a medida</h3><p>CRM, tableros y sistemas hechos para cómo trabaja tu empresa, con tus datos en un solo lugar y accesos por usuario.</p></li>
+ </ul>
+</div></section>
+
+<section id="como-trabajamos"><div class="w">
+ <div class="head"><h2>Relevamos tu empresa de punta a punta</h2><p class="lead">Un método simple para llegar a un plan claro. Podemos ir a tu planta o hacerlo 100% remoto.</p></div>
+ <ol class="steps">
+  <li><h3>Escuchamos al equipo</h3><p>Hablamos con quienes operan cada área para entender cómo se trabaja de verdad.</p></li>
+  <li><h3>Revisamos planillas y sistemas</h3><p>Miramos los archivos y herramientas que usan hoy, y qué datos hay.</p></li>
+  <li><h3>Mapeamos cómo fluye todo</h3><p>Dibujamos el recorrido de ventas, pedidos, stock, entrega y cobranza.</p></li>
+  <li><h3>Detectamos fugas y cuellos de botella</h3><p>Ordenamos las oportunidades por impacto y definimos qué resolver primero.</p></li>
+ </ol>
+ <p class="note">Al final recibís un mapa de procesos, las oportunidades ordenadas por impacto y un plan de qué automatizar primero.</p>
+</div></section>
+
+<section id="resultados" class="alt"><div class="w">
+ <div class="head"><h2>Lo que construimos</h2><p class="lead">Ejemplos del tipo de herramientas que armamos para empresas de distintos rubros.</p></div>
+ <ul class="build">
+  <li><h3>CRM conectado a WhatsApp</h3><p>Cada consulta que entra se registra, se asigna a un vendedor y se sigue hasta cerrar. Nada queda en un celular.</p></li>
+  <li><h3>Tableros de ventas y stock</h3><p>Qué se vende, qué rota y qué está parado, actualizado solo y a la vista de quien decide.</p></li>
+  <li><h3>Reportes automáticos</h3><p>Informes que antes llevaban horas de planilla llegan armados por mail cuando los necesitás.</p></li>
+  <li><h3>Análisis de demanda y rotación</h3><p>Con los datos ordenados, planificamos compras y producción y decidimos qué productos empujar.</p></li>
+ </ul>
+</div></section>
+
+<section><div class="w cap">
+ <p class="big">Eficiencia, tecnología y <span>capital.</span></p>
+ <p class="lead">Ordenar procesos libera tiempo, y el tiempo se convierte en ahorro. Te ayudamos a que ese ahorro se reinvierta en lo que hace crecer a tu empresa.</p>
+</div></section>
+
+<section id="checklist" class="alt"><div class="w cap">
+ <div>
+  <h2>¿Tus procesos te están costando plata?</h2>
+  <p class="lead" style="margin-top:22px">Descargá el checklist de 10 señales y marcá cuántas pasan hoy en tu empresa. Te lleva cinco minutos y te muestra por dónde empezar.</p>
+ </div>
+ <form id="fl" class="mini" novalidate>
+  <label>Tu mail<input name="email" type="email" required autocomplete="email" placeholder="nombre@empresa.com"></label>
+  <input class="hp" name="web" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <button class="btn btn-p" type="submit">Descargar checklist (PDF)</button>
+  <p class="fine">Se descarga al instante y no te mandamos spam. Al descargar aceptás la <a href="politica-privacidad.html">política de privacidad</a>.</p>
+  <p class="fine" id="flmsg" role="status"></p>
+ </form>
+</div></section>
+
+<section id="preguntas"><div class="w">
+ <div class="head"><h2>Preguntas frecuentes</h2><p class="lead">Lo que más nos preguntan antes de empezar.</p></div>
+ <div class="faq">
+  <div class="q"><button aria-expanded="false"><span>¿Por dónde empezamos?</span><b></b></button><div class="a"><div><p>Por el relevamiento. Escuchamos al equipo, revisamos cómo trabajan hoy y te entregamos un mapa de procesos con un plan de qué resolver primero. Recién ahí definimos qué construir.</p></div></div></div>
+  <div class="q"><button aria-expanded="false"><span>¿Hace falta que vayan a la empresa?</span><b></b></button><div class="a"><div><p>No. Podemos ir a tu planta si te sirve, pero el relevamiento también se hace 100% remoto, con reuniones y revisión de tus planillas y sistemas.</p></div></div></div>
+  <div class="q"><button aria-expanded="false"><span>¿Tengo que dejar de usar mis herramientas?</span><b></b></button><div class="a"><div><p>No necesariamente. Siempre que se pueda, conectamos lo que ya usás y reemplazamos solo lo que hoy genera pérdidas o trabajo manual.</p></div></div></div>
+  <div class="q"><button aria-expanded="false"><span>¿Trabajan con empresas chicas?</span><b></b></button><div class="a"><div><p>Sí, trabajamos con PyMEs. La idea es que cada mejora se pague sola, así que arrancamos por lo que más impacto tiene.</p></div></div></div>
+ </div>
+</div></section>
+
+<section id="contacto" class="alt"><div class="w contact">
+ <div>
+  <h2>¿Dónde está tu mayor oportunidad?</h2>
+  <p class="lead" style="margin-top:22px">Contanos cómo trabajás hoy y te respondemos con una propuesta de relevamiento.</p>
+  <div class="ctas"><a class="btn btn-g" id="c-ag" href="#" target="_blank" rel="noopener" hidden>Agendar llamada de 20 minutos</a></div>
+  <div class="ico-row">
+   <a class="ico" id="c-wa" href="#" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp" title="WhatsApp" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 12a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.2-4.2A8.5 8.5 0 1 1 20.5 12z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2.1-1-.9.8a5 5 0 0 1-2.2-2.2l.8-.9-1-2.1z" fill="currentColor" stroke="none"/></svg></a>
+   <a class="ico" id="c-mail" href="#" aria-label="Escribinos por mail" title="Mail" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7.5l8 6 8-6"/></svg></a>
+   <a class="ico" id="c-ig" href="#" target="_blank" rel="noopener" aria-label="Seguinos en Instagram" title="Instagram" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+  </div>
+ </div>
+ <form id="f">
+  <label>Tu nombre<input name="n" required autocomplete="name" placeholder="Nombre y apellido"></label>
+  <label>Empresa<input name="e" required autocomplete="organization" placeholder="Nombre de tu empresa"></label>
+  <label>¿Qué te gustaría mejorar?<textarea name="m" required placeholder="Ej.: llevamos los pedidos en planillas y no sabemos qué stock rota"></textarea></label>
+  <input class="hp" name="web" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <button class="btn btn-p" type="submit">Pedir relevamiento</button>
+  <p class="fine">Usamos tus datos solo para responderte. Más info en la <a href="politica-privacidad.html">política de privacidad</a>.</p>
+  <small id="fmsg" style="color:var(--mut)" role="status"></small>
+ </form>
+</div></section>
+</main>
+
+<a class="fab" id="fab" href="#contacto" aria-label="Contactar a Vertag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 12a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.2-4.2A8.5 8.5 0 1 1 20.5 12z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2.1-1-.9.8a5 5 0 0 1-2.2-2.2l.8-.9-1-2.1z" fill="currentColor" stroke="none"/></svg></a>
+<footer><div class="w"><span>Vertag Solutions. Eficiencia, Tecnología y Capital. · <a href="politica-privacidad.html">Privacidad</a></span><span>Misiones, Argentina</span></div></footer>
+
+<script>
+/* ===== COMPLETAR ANTES DE PUBLICAR ===== */
+var CONFIG={
+  whatsapp:"5493764380293",            // solo números con código de país, ej. 5493764123456
+  email:"vertagsolutions@gmail.com",               // ej. hola@tudominio.com
+  instagram:"https://www.instagram.com/vertagsolutions",
+  agenda:"https://cal.com/vertag/llamada-de-20-minutos-con-vertag",              // link de Cal.com / Calendly. Vacío = el botón no se muestra
+  supabaseUrl:"",         // https://xxxx.supabase.co  (vacío = no guarda leads)
+  supabaseKey:""          // clave anon / publishable (es pública, va en el navegador)            // ej. https://instagram.com/tuusuario
+};
+/* ======================================= */
+document.documentElement.classList.add('js');
+(function(){
+ var $=function(q,c){return (c||document).querySelector(q)},$$=function(q,c){return Array.prototype.slice.call((c||document).querySelectorAll(q))};
+ var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ /* menu móvil */
+ var bg=$('.burger'),mn=$('#menu');
+ function menu(o){bg.setAttribute('aria-expanded',o);bg.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú');mn.classList.toggle('open',o)}
+ bg.addEventListener('click',function(){menu(bg.getAttribute('aria-expanded')!=='true')});
+ $$('.links a').forEach(function(a){a.addEventListener('click',function(){menu(false)})});
+ addEventListener('keydown',function(e){if(e.key==='Escape')menu(false)});
+ /* revelado suave */
+ $$('.head,.rows li,.steps li,.note,.build li,.cap>*,.faq .q,.contact>*').forEach(function(el,i){el.classList.add('rv');el.style.setProperty('--d',((i%4)*70)+'ms')});
+ if('IntersectionObserver' in window&&!rm){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});$$('.rv').forEach(function(el){io.observe(el)})}else $$('.rv').forEach(function(el){el.classList.add('in')});
+ /* scroll: progreso, sección activa, pasos, botón flotante */
+ var secs=$$('main section[id]'),lnk=$$('.links a[href^="#"]:not(.btn)'),st=$('.steps'),sl=$$('.steps li'),fab=$('#fab'),hero=$('.hero'),tk=false;
+ function tick(){tk=false;var y=scrollY,h=document.documentElement.scrollHeight-innerHeight;
+  document.documentElement.style.setProperty('--sp',h>0?(y/h).toFixed(4):0);
+  var cur='';secs.forEach(function(s){if(s.getBoundingClientRect().top<innerHeight*.4)cur=s.id});
+  lnk.forEach(function(a){a.classList.toggle('act',a.getAttribute('href')==='#'+cur)});
+  var r=st.getBoundingClientRect(),p=Math.max(0,Math.min(1,(innerHeight*.72-r.top)/(r.height+innerHeight*.1)));
+  st.style.setProperty('--p',p.toFixed(3));sl.forEach(function(li,i){li.classList.toggle('on',p>=(i+.2)/sl.length||rm)});
+  fab.classList.toggle('show',y>hero.offsetHeight*.8&&r.top<1e9&&$('#contacto').getBoundingClientRect().top>innerHeight*.6)}
+ addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(tick)}},{passive:true});addEventListener('resize',tick);tick();
+ /* luz que sigue al cursor en el hero */
+ if(matchMedia('(pointer:fine)').matches&&!rm){hero.addEventListener('pointermove',function(e){var b=hero.getBoundingClientRect();hero.style.setProperty('--mx',(e.clientX-b.left)+'px');hero.style.setProperty('--my',(e.clientY-b.top)+'px');hero.style.setProperty('--glow',1)});hero.addEventListener('pointerleave',function(){hero.style.setProperty('--glow',0)})}
+ /* diagrama: resalta la conexión */
+ $$('.map .node g[data-n]').forEach(function(g){var w=$('.map .wire[data-n="'+g.dataset.n+'"]');g.addEventListener('pointerenter',function(){w.classList.add('hot')});g.addEventListener('pointerleave',function(){w.classList.remove('hot')})});
+ /* preguntas frecuentes */
+ $$('.faq .q button').forEach(function(b){b.addEventListener('click',function(){var q=b.parentNode,o=!q.classList.contains('open');q.classList.toggle('open',o);b.setAttribute('aria-expanded',o)})});
+})();
+(function(){
+ var C=CONFIG,$=function(i){return document.getElementById(i)};
+ if(C.whatsapp){$('c-wa').hidden=false;$('c-wa').href='https://wa.me/'+C.whatsapp;$('fab').href='https://wa.me/'+C.whatsapp;$('fab').target='_blank';$('fab').rel='noopener';$('fab').setAttribute('aria-label','Escribinos por WhatsApp')}
+ if(C.agenda){$('c-ag').hidden=false;$('c-ag').href=C.agenda}
+ if(C.email){$('c-mail').hidden=false;$('c-mail').href='mailto:'+C.email}
+ if(C.instagram){$('c-ig').hidden=false;$('c-ig').href=C.instagram}
+ function saveLead(row){
+  if(!C.supabaseUrl||!C.supabaseKey)return;
+  var q=new URLSearchParams(location.search),u={};['utm_source','utm_medium','utm_campaign','utm_content'].forEach(function(k){if(q.get(k))u[k]=q.get(k)});
+  row.origen=document.referrer||null;row.utm=Object.keys(u).length?u:null;row.pagina=location.pathname;
+  var h={'Content-Type':'application/json',apikey:C.supabaseKey,Prefer:'return=minimal'};
+  if(/^eyJ/.test(C.supabaseKey))h.Authorization='Bearer '+C.supabaseKey;
+  try{fetch(C.supabaseUrl.replace(/\/$/,'')+'/rest/v1/leads_web',{method:'POST',keepalive:true,headers:h,body:JSON.stringify(row)}).catch(function(){})}catch(e){}
+ }
+ $('fl').addEventListener('submit',function(ev){
+  ev.preventDefault();var f=ev.target,d=new FormData(f),m=$('flmsg'),em=String(d.get('email')||'').trim();
+  if(!/^\S+@\S+\.\S+$/.test(em)){m.textContent='Revisá el mail: tiene que tener formato nombre@empresa.com.';f.email.focus();return}
+  if(!d.get('web'))saveLead({tipo:'checklist',email:em});
+  var a=document.createElement('a');a.href='assets/checklist-procesos.pdf';a.download='Vertag-checklist-procesos.pdf';document.body.appendChild(a);a.click();a.remove();
+  m.innerHTML='Listo, se está descargando. Si no arranca, <a href="assets/checklist-procesos.pdf" download>descargalo acá</a>.';f.reset();
+ });
+ $('f').addEventListener('submit',function(ev){
+  ev.preventDefault();var d=new FormData(ev.target),t='Hola, soy '+d.get('n')+' de '+d.get('e')+'. Quiero mejorar: '+d.get('m');
+  if(!d.get('web'))saveLead({tipo:'contacto',nombre:d.get('n'),empresa:d.get('e'),mensaje:d.get('m')});
+  var bt=ev.target.querySelector('button');bt.textContent='Abriendo…';setTimeout(function(){bt.textContent='Pedir relevamiento'},2500);
+  if(C.whatsapp){window.open('https://wa.me/'+C.whatsapp+'?text='+encodeURIComponent(t),'_blank','noopener');$('fmsg').textContent='Se abrió WhatsApp con tu mensaje. Enviálo para que lo recibamos.'}
+  else if(C.email){location.href='mailto:'+C.email+'?subject='+encodeURIComponent('Relevamiento: '+d.get('e'))+'&body='+encodeURIComponent(t)}
+  else{$('fmsg').textContent='Falta configurar el contacto en CONFIG (index.html).'}
+ });
+})();
+</script>
+</body>
+</html>

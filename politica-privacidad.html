@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Política de privacidad | Vertag Solutions</title>
+<meta name="description" content="Cómo Vertag Solutions recibe y usa los datos personales que le compartís al usar el sitio.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#050E1A">
+<link rel="icon" href="assets/favicon.png">
+<style>
+@font-face{font-family:Sora;font-weight:100 800;font-display:swap;src:url(assets/sora.woff2) format('woff2')}
+@font-face{font-family:Manrope;font-weight:200 800;font-display:swap;src:url(assets/manrope.woff2) format('woff2')}
+:root{--bg:#050E1A;--bg2:#08182B;--panel:#0A1F37;--line:#14304f;--blue:#3B9AE8;--hi:#6FBBF5;--ink:#EEF4FA;--mut:#A9BACD}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{background:var(--bg);color:var(--ink);font:400 17.5px/1.75 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--hi)}a:hover{color:#fff}
+:focus-visible{outline:3px solid var(--hi);outline-offset:3px;border-radius:6px}
+.w{width:min(1120px,100% - 48px);margin-inline:auto}
+#bar{position:fixed;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--hi));transform-origin:left;transform:scaleX(var(--sp,0));z-index:40}
+header{position:sticky;top:0;z-index:20;background:rgba(5,14,26,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(20,48,79,.7)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;font:800 20px Sora;letter-spacing:.04em}.brand img{width:36px;height:36px;border-radius:50%}
+.back{font:700 15px Manrope;color:var(--mut);text-decoration:none;padding:10px 16px;border-radius:10px;box-shadow:inset 0 0 0 2px var(--line);transition:box-shadow .25s,color .25s,transform .3s cubic-bezier(.2,.9,.3,1.4)}
+.back:hover{color:#fff;box-shadow:inset 0 0 0 2px var(--blue);transform:translateY(-2px)}.back:active{transform:scale(.96)}
+.hero{padding:clamp(48px,8vw,96px) 0 clamp(32px,5vw,56px);background:radial-gradient(ellipse 60% 80% at 80% 0%,rgba(18,64,110,.5),transparent 70%)}
+h1{font:800 clamp(38px,6vw,68px)/1.02 Sora;letter-spacing:-.04em;max-width:16ch}
+.meta{margin-top:22px;color:var(--mut);font-size:15.5px}
+.sum{margin-top:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.sum div{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 22px}
+.sum b{display:block;font:700 18px/1.25 Sora;letter-spacing:-.02em;margin-bottom:8px}
+.sum span{display:block;color:var(--mut);font-size:15.5px;line-height:1.55}
+.lay{display:grid;grid-template-columns:250px minmax(0,1fr);gap:64px;padding:clamp(32px,5vw,64px) 0 100px}
+.toc{position:sticky;top:96px;align-self:start}
+.toc p{font:700 16px Sora;margin-bottom:14px}
+.toc ol{list-style:none;border-left:2px solid var(--line)}
+.toc a{display:block;padding:7px 0 7px 18px;margin-left:-2px;border-left:2px solid transparent;color:var(--mut);text-decoration:none;font-size:15.5px;line-height:1.4;transition:color .2s,border-color .2s}
+.toc a:hover{color:#fff}.toc a.act{color:#fff;border-left-color:var(--blue);font-weight:700}
+article{max-width:740px;min-width:0}
+article section{padding:8px 0 44px}
+article h2{font:700 clamp(24px,3vw,31px)/1.15 Sora;letter-spacing:-.03em;margin-bottom:16px;display:flex;gap:14px;align-items:baseline}
+article h2 i{font:800 16px Sora;font-style:normal;color:var(--blue);flex:none;min-width:2ch}
+article p,article li{color:#C3D1E0}
+article p+p,article p+ul,article ul+p,article .tw+p,article .rg+p{margin-top:16px}
+article ul{padding-left:22px}article li{margin:7px 0}article li::marker{color:var(--blue)}
+article strong{color:#fff;font-weight:700}
+.tw{overflow-x:auto;margin-top:18px;border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15.5px;line-height:1.55}
+th,td{text-align:left;padding:15px 18px;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:var(--panel);font:700 14.5px Sora;color:#fff}tr:last-child td{border-bottom:0}td:first-child{color:#fff;font-weight:700;white-space:nowrap}
+.call{margin-top:18px;padding:20px 24px;border-left:4px solid var(--blue);background:rgba(15,45,78,.4);border-radius:0 12px 12px 0;color:#DCE7F2}
+.rg{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.rg div{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;font-size:15.5px;line-height:1.5;color:#C3D1E0}.rg b{display:block;color:#fff;font:700 16px Sora;margin-bottom:4px}
+.cta{margin-top:10px;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:32px;display:grid;gap:18px}
+.cta h2{margin:0}.cta .row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn{display:inline-block;font:700 16px Manrope;padding:14px 24px;border-radius:10px;text-decoration:none;background:var(--blue);color:#04101d;transition:background .25s,box-shadow .3s,transform .35s cubic-bezier(.2,.9,.3,1.4)}
+.btn:hover{background:var(--hi);color:#04101d;transform:translateY(-2px);box-shadow:0 10px 30px -8px rgba(59,154,232,.65)}.btn:active{transform:scale(.96)}
+.ico{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;color:var(--hi);box-shadow:inset 0 0 0 2px #1d4f80;transition:background .25s,color .25s,transform .35s cubic-bezier(.2,.9,.3,1.4)}
+.ico svg{width:23px;height:23px}.ico:hover{background:var(--blue);color:#04101d;transform:translateY(-3px)}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--mut);font-size:15px}footer .w{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:960px){.lay{grid-template-columns:minmax(0,1fr);gap:0}.toc{display:none}.sum{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){table{min-width:0}thead{display:none}tr,td{display:block}tr{padding:14px 18px;border-bottom:1px solid var(--line)}tr:last-child{border-bottom:0}td{border:0;padding:3px 0;white-space:normal!important}td:not(:first-child)::before{content:attr(data-l) ": ";color:#fff;font-weight:700}td:first-child{font:700 16px Sora;margin-bottom:4px}.sum,.rg{grid-template-columns:1fr}body{font-size:17px}.cta{padding:24px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{#bar,header,.toc,.cta,footer{display:none}body{background:#fff;color:#000}article p,article li,.sum span{color:#222}h1,article h2,article strong{color:#000}.sum div,.rg div{border-color:#999;background:#fff}}
+</style>
+</head>
+<body>
+<div id="bar" aria-hidden="true"></div>
+<header><div class="w"><a class="brand" href="index.html"><img src="assets/logo.png" alt="">VERTAG</a><a class="back" href="index.html">Volver al inicio</a></div></header>
+
+<main>
+<div class="hero"><div class="w">
+ <h1>Política de privacidad</h1>
+ <p class="meta">Última actualización: octubre de 2026 · Se aplica al sitio web de Vertag Solutions y a los formularios que contiene.</p>
+ <div class="sum" aria-label="Resumen">
+  <div><b>Pedimos poco</b><span>Solo los datos que completás vos en los formularios.</span></div>
+  <div><b>Los usamos para responderte</b><span>No vendemos tus datos ni los usamos para publicidad de terceros.</span></div>
+  <div><b>Sin cookies de seguimiento</b><span>Medimos visitas de forma agregada, sin perfilarte.</span></div>
+  <div><b>Vos decidís</b><span>Podés pedirnos ver, corregir o borrar tus datos cuando quieras.</span></div>
+ </div>
+</div></div>
+
+<div class="w lay">
+<nav class="toc" aria-label="Índice"><p>Contenido</p><ol>
+ <li><a href="#responsables">Quiénes somos</a></li>
+ <li><a href="#datos">Qué datos recibimos</a></li>
+ <li><a href="#finalidad">Para qué los usamos</a></li>
+ <li><a href="#base">Por qué podemos usarlos</a></li>
+ <li><a href="#cookies">Cookies y estadísticas</a></li>
+ <li><a href="#conservacion">Cuánto tiempo los guardamos</a></li>
+ <li><a href="#cambios">Cambios a esta política</a></li>
+ <li><a href="#contacto">Contacto</a></li>
+</ol></nav>
+
+<article>
+<section id="responsables"><h2><i>01</i>Quiénes somos</h2>
+ <p>Los responsables del tratamiento de tus datos son los titulares de Vertag Solutions:</p>
+ <ul><li><strong>Ian Benjamin Vera</strong></li><li><strong>Fabrizio Nicolás Tagliabue</strong></li></ul>
+ <p>Trabajamos desde Misiones, Argentina. Podés escribirnos a <a href="mailto:vertagsolutions@gmail.com">vertagsolutions@gmail.com</a>.</p></section>
+
+<section id="datos"><h2><i>02</i>Qué datos recibimos</h2>
+ <p>Solo recibimos lo que vos nos das al usar el sitio, más algunos datos técnicos básicos de la visita.</p>
+ <div class="tw"><table><thead><tr><th>Dato</th><th>Cuándo lo recibimos</th><th>Para qué</th></tr></thead><tbody>
+  <tr><td data-l="Dato">Nombre y empresa</td><td data-l="Cuándo lo recibimos">Formulario de contacto</td><td data-l="Para qué">Saber con quién hablamos y de qué empresa</td></tr>
+  <tr><td data-l="Dato">Mensaje</td><td data-l="Cuándo lo recibimos">Formulario de contacto</td><td data-l="Para qué">Entender qué querés mejorar y responderte</td></tr>
+  <tr><td data-l="Dato">Mail</td><td data-l="Cuándo lo recibimos">Descarga del checklist</td><td data-l="Para qué">Registrar quién lo descargó y poder contactarte si lo pedís</td></tr>
+  <tr><td data-l="Dato">Origen de la visita</td><td data-l="Cuándo lo recibimos">Al enviar un formulario</td><td data-l="Para qué">Saber qué canal funcionó (por ejemplo, Instagram) mediante la página de origen y los parámetros de campaña</td></tr>
+  <tr><td data-l="Dato">Datos de uso agregados</td><td data-l="Cuándo lo recibimos">Al navegar el sitio</td><td data-l="Para qué">Estadísticas generales, como páginas vistas y país</td></tr>
+ </tbody></table></div>
+ <p>No pedimos datos sensibles, documentos de identidad, datos bancarios ni de tarjetas. Te pedimos que tampoco los incluyas en el mensaje.</p>
+ <p>Si en vez de usar el formulario nos escribís por WhatsApp, mail o Instagram, recibimos los datos que compartas en esa conversación, que se rige además por las políticas de esos servicios.</p></section>
+
+<section id="finalidad"><h2><i>03</i>Para qué los usamos</h2>
+ <ul><li>Responder tu consulta y armar una propuesta de relevamiento si te interesa.</li><li>Enviarte el material que pediste, como el checklist de procesos.</li><li>Coordinar una llamada si decidís agendarla.</li><li>Entender qué partes del sitio y qué canales funcionan, para mejorarlos.</li></ul>
+ <div class="call"><strong>Lo que no hacemos:</strong> no vendemos ni alquilamos tus datos, no los usamos para publicidad de terceros y no te enviamos newsletters ni promociones que no pediste.</div></section>
+
+<section id="base"><h2><i>04</i>Por qué podemos usarlos</h2>
+ <p>Usamos tus datos porque <strong>vos nos los das voluntariamente</strong> al completar un formulario, sabiendo para qué los pedimos. Al enviarlo aceptás esta política. Si cambiás de opinión, podés retirar tu consentimiento en cualquier momento escribiéndonos, y dejamos de usar tus datos.</p></section>
+
+<section id="cookies"><h2><i>05</i>Cookies y estadísticas</h2>
+ <p>Este sitio <strong>no usa cookies publicitarias ni de seguimiento</strong>. Las estadísticas de visitas son agregadas y no te identifican personalmente. Las tipografías se cargan desde nuestro propio sitio, no desde servicios externos.</p>
+ <p>Si hacés clic hacia WhatsApp, Instagram o Cal.com, esos sitios pueden usar sus propias cookies, que se rigen por sus políticas.</p></section>
+
+<section id="conservacion"><h2><i>06</i>Cuánto tiempo los guardamos</h2>
+ <p>Conservamos tus datos mientras sean necesarios para responderte y, si trabajamos juntos, durante la relación comercial y el tiempo que exijan las obligaciones legales. Si no hubo respuesta ni relación, los eliminamos cuando dejan de ser útiles. Podés pedir que los borremos antes en cualquier momento.</p></section>
+
+<section id="cambios"><h2><i>07</i>Cambios a esta política</h2>
+ <p>Podemos actualizar esta política si cambian el sitio o la normativa. Siempre vas a ver arriba la fecha de la última actualización. Si el cambio es importante, lo destacaremos en el sitio.</p></section>
+
+<section id="contacto"><div class="cta">
+ <h2>¿Dudas sobre tus datos?</h2>
+ <p>Escribinos y te respondemos.</p>
+ <div class="row">
+  <a class="btn" href="mailto:vertagsolutions@gmail.com">Escribir a Vertag</a>
+  <a class="ico" href="https://wa.me/5493764380293" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 12a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.2-4.2A8.5 8.5 0 1 1 20.5 12z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2.1-1-.9.8a5 5 0 0 1-2.2-2.2l.8-.9-1-2.1z" fill="currentColor" stroke="none"/></svg></a>
+  <a class="ico" href="https://www.instagram.com/vertagsolutions" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+ </div>
+</div></section>
+</article>
+</div>
+</main>
+<footer><div class="w"><span>Vertag Solutions. Eficiencia, Tecnología y Capital.</span><span>Misiones, Argentina</span></div></footer>
+<script>
+(function(){
+ var secs=[].slice.call(document.querySelectorAll('article section[id]')),lk=[].slice.call(document.querySelectorAll('.toc a')),tk=false;
+ function t(){tk=false;var h=document.documentElement.scrollHeight-innerHeight;document.documentElement.style.setProperty('--sp',h>0?(scrollY/h).toFixed(4):0);
+  var c='';secs.forEach(function(s){if(s.getBoundingClientRect().top<innerHeight*.35)c=s.id});lk.forEach(function(a){a.classList.toggle('act',a.getAttribute('href')==='#'+c)})}
+ addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(t)}},{passive:true});t();
+})();
+</script>
+</body></html>
