@@ -87,6 +87,9 @@ nav{display:flex;align-items:center;justify-content:space-between;height:72px}
 section{padding:clamp(64px,9vw,120px) 0}
 .alt{background:var(--bg2);border-block:1px solid var(--line)}
 .head{display:grid;grid-template-columns:1fr 1fr;gap:24px 60px;align-items:end;margin-bottom:56px}
+.tres{display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px}
+.tres div{border-top:1px solid var(--line);padding:26px 0}
+.tres h3{font-size:clamp(20px,2.2vw,26px);margin-bottom:8px}.tres p{color:var(--mut);max-width:34ch}
 .rows{list-style:none}
 .rows li{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:12px 60px;padding:30px 0;border-top:1px solid var(--line)}
 .rows li:last-child{border-bottom:1px solid var(--line)}
@@ -101,9 +104,6 @@ section{padding:clamp(64px,9vw,120px) 0}
 .steps li:before{transition:background .5s,color .5s,box-shadow .5s}
 .steps h3{font-size:22px;margin-bottom:10px}.steps p{color:var(--mut);font-size:16.5px}
 .note{margin-top:52px;padding:22px 28px;border-left:4px solid var(--blue);background:rgba(15,45,78,.4);max-width:760px;font-weight:600}
-.build{display:grid;grid-template-columns:repeat(2,1fr);gap:0 60px}
-.build li{list-style:none;padding:26px 0;border-top:1px solid var(--line)}
-.build h3{font-size:22px;margin-bottom:8px}.build p{color:var(--mut);font-size:16.5px}
 .cap{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
 .cap .big{font:800 clamp(34px,5vw,62px)/1.05 Sora;letter-spacing:-.035em}
 .cap .big span{color:var(--blue-hi)}
@@ -155,7 +155,7 @@ footer .w{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
  .links .btn{margin-top:20px;text-align:center;padding:15px}
  .hero .w,.head,.cap,.contact{grid-template-columns:1fr}
  .map{max-width:520px;margin:10px auto 0}
- .rows li{grid-template-columns:1fr}
+ .rows li{grid-template-columns:1fr}.tres{grid-template-columns:1fr}
  .steps{grid-template-columns:1fr 1fr;gap:40px 20px}.steps:before{display:none}
  .build{grid-template-columns:1fr}
 }
@@ -170,7 +170,7 @@ footer .w{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <header><nav class="w">
  <a class="brand" href="#top" aria-label="Vertag, inicio"><img src="assets/logo.png" alt="">VERTAG</a>
  <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><i></i><i></i><i></i></button>
- <div class="links" id="menu"><a href="#que-hacemos">Qué hacemos</a><a href="#como-trabajamos">Cómo trabajamos</a><a href="#resultados">Qué construimos</a><a href="#preguntas">Preguntas</a><a href="#contacto">Contacto</a><a class="btn btn-p" href="#contacto">Analizar mi empresa</a></div>
+ <div class="links" id="menu"><a href="#como-trabajamos">Cómo trabajamos</a><a href="#que-hacemos">Qué hacemos</a><a href="#preguntas">Preguntas</a><a href="#contacto">Contacto</a><a class="btn btn-p" href="#contacto">Analizar mi empresa</a></div>
 </nav></header>
 
 <main id="top">
@@ -200,24 +200,15 @@ footer .w{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </div></div>
 
 <section id="problema"><div class="w">
- <div class="head"><h2>La empresa crece. Los procesos, no.</h2><p class="lead">Cuando cada área arma sus propias planillas, nadie ve el negocio completo. Ahí se escapan las ventas, las horas y el margen.</p></div>
- <ul class="rows">
-  <li><h3>Cada área, su planilla</h3><p>Ventas, stock y cobranzas viven en archivos distintos que se actualizan a mano y casi nunca coinciden.</p></li>
-  <li><h3>Información que no está en un solo lugar</h3><p>Los datos de clientes y pedidos quedan en celulares, chats y cabezas. Si alguien falta, el proceso se frena.</p></li>
-  <li><h3>Decisiones a ojo</h3><p>Sin números a mano, comprar, producir o priorizar clientes se resuelve por intuición. Lo que no está mapeado no se puede mejorar.</p></li>
- </ul>
+ <div class="head"><h2>La empresa crece. Los procesos, no.</h2><p class="lead">Cuando cada área trabaja por su cuenta, nadie ve el negocio completo. Ahí se escapan las ventas, las horas y el margen.</p></div>
+ <div class="tres">
+  <div><h3>Una planilla por área</h3><p>Se actualizan a mano y casi nunca coinciden.</p></div>
+  <div><h3>Datos en celulares y chats</h3><p>Si alguien falta, el proceso se frena.</p></div>
+  <div><h3>Decisiones a ojo</h3><p>Sin números a mano, se decide por intuición.</p></div>
+ </div>
 </div></section>
 
-<section id="que-hacemos" class="alt"><div class="w">
- <div class="head"><h2>Qué hacemos</h2><p class="lead">Tres formas de resolver lo que el relevamiento encuentra. Elegimos la que mejor se paga sola.</p></div>
- <ul class="rows">
-  <li><h3>Automatización de procesos</h3><p>Pedidos, reportes, alertas y cargas que hoy se hacen a mano pasan a correr solos, conectados a las herramientas que ya usás.</p></li>
-  <li><h3>Soluciones con IA</h3><p>Asistentes y herramientas que atienden consultas, ordenan información y ahorran horas de trabajo repetitivo del equipo.</p></li>
-  <li><h3>Software a medida</h3><p>CRM, tableros y sistemas hechos para cómo trabaja tu empresa, con tus datos en un solo lugar y accesos por usuario.</p></li>
- </ul>
-</div></section>
-
-<section id="como-trabajamos"><div class="w">
+<section id="como-trabajamos" class="alt"><div class="w">
  <div class="head"><h2>Relevamos tu empresa de punta a punta</h2><p class="lead">Un método simple para llegar a un plan claro. Podemos ir a tu planta o hacerlo 100% remoto.</p></div>
  <ol class="steps">
   <li><h3>Escuchamos al equipo</h3><p>Hablamos con quienes operan cada área para entender cómo se trabaja de verdad.</p></li>
@@ -228,19 +219,13 @@ footer .w{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
  <p class="note">Al final recibís un mapa de procesos, las oportunidades ordenadas por impacto y un plan de qué automatizar primero.</p>
 </div></section>
 
-<section id="resultados" class="alt"><div class="w">
- <div class="head"><h2>Lo que construimos</h2><p class="lead">Ejemplos del tipo de herramientas que armamos para empresas de distintos rubros.</p></div>
- <ul class="build">
-  <li><h3>CRM conectado a WhatsApp</h3><p>Cada consulta que entra se registra, se asigna a un vendedor y se sigue hasta cerrar. Nada queda en un celular.</p></li>
-  <li><h3>Tableros de ventas y stock</h3><p>Qué se vende, qué rota y qué está parado, actualizado solo y a la vista de quien decide.</p></li>
-  <li><h3>Reportes automáticos</h3><p>Informes que antes llevaban horas de planilla llegan armados por mail cuando los necesitás.</p></li>
-  <li><h3>Análisis de demanda y rotación</h3><p>Con los datos ordenados, planificamos compras y producción y decidimos qué productos empujar.</p></li>
+<section id="que-hacemos"><div class="w">
+ <div class="head"><h2>Qué hacemos</h2><p class="lead">Tres formas de resolver lo que el relevamiento encuentra. Elegimos la que mejor se paga sola.</p></div>
+ <ul class="rows">
+  <li><h3>Automatización de procesos</h3><p>Pedidos, reportes, alertas y cargas que hoy se hacen a mano pasan a correr solos, conectados a las herramientas que ya usás. Por ejemplo, informes que llegan armados por mail.</p></li>
+  <li><h3>Soluciones con IA</h3><p>Asistentes y herramientas que atienden consultas, ordenan información y ahorran horas de trabajo repetitivo. Por ejemplo, un asistente que responde las consultas frecuentes.</p></li>
+  <li><h3>Software a medida</h3><p>CRM, tableros y sistemas hechos para cómo trabaja tu empresa, con tus datos en un solo lugar. Por ejemplo, un CRM que registra cada consulta de WhatsApp y la sigue hasta cerrar.</p></li>
  </ul>
-</div></section>
-
-<section><div class="w cap">
- <p class="big">Eficiencia, tecnología y <span>capital.</span></p>
- <p class="lead">Ordenar procesos libera tiempo, y el tiempo se convierte en ahorro. Te ayudamos a que ese ahorro se reinvierta en lo que hace crecer a tu empresa.</p>
 </div></section>
 
 <section id="checklist" class="alt"><div class="w cap">
@@ -320,7 +305,7 @@ document.documentElement.classList.add('js');
  $$('.links a').forEach(function(a){a.addEventListener('click',function(){menu(false)})});
  addEventListener('keydown',function(e){if(e.key==='Escape')menu(false)});
  /* revelado suave */
- $$('.head,.rows li,.steps li,.note,.build li,.cap>*,.faq .q,.contact>*').forEach(function(el,i){el.classList.add('rv');el.style.setProperty('--d',((i%4)*70)+'ms')});
+ $$('.head,.rows li,.tres div,.steps li,.note,.cap>*,.faq .q,.contact>*').forEach(function(el,i){el.classList.add('rv');el.style.setProperty('--d',((i%4)*70)+'ms')});
  if('IntersectionObserver' in window&&!rm){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});$$('.rv').forEach(function(el){io.observe(el)})}else $$('.rv').forEach(function(el){el.classList.add('in')});
  /* scroll: progreso, sección activa, pasos, botón flotante */
  var secs=$$('main section[id]'),lnk=$$('.links a[href^="#"]:not(.btn)'),st=$('.steps'),sl=$$('.steps li'),fab=$('#fab'),hero=$('.hero'),tk=false;
